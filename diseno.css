@@ -1,0 +1,251 @@
+body {
+background-color: #cbc5ff;
+}
+/*foto del cv*/
+.perfil {       
+height: 150%;
+border-color: black;
+border: 1px solid;
+padding: 5px;
+margin: auto;
+display: block;
+border-radius: 100px;
+content: 5px;
+}
+.perfil:hover{
+    transform: scale(1.50);
+}
+/*nombre*/
+h1{             
+font-family:'Roboto', sans-serif;
+color: rgb(12, 0, 53);
+text-align: center;
+margin-bottom: 0%;
+margin-top: 0%;}
+/*profesion*/
+h2 {            
+    font-family:'Roboto', sans-serif;
+color: rgb(255, 255, 255);
+text-align: center;
+margin-top: 0%;
+margin-bottom: 1%;
+text-transform: uppercase;
+font-size: 20px;
+background: rgb(12, 0, 53);
+padding: 5px;
+}
+/*cuadro nombre y profesion*/
+.encabezado {       
+border: rgb(12, 0, 53) 2px inset;
+width: fit-content;
+height: 60%;
+padding: 0%;
+margin: auto;
+flex-direction: column;
+}
+.encabezado h2:hover {
+    background: #6352ff;
+}
+/*subtitulos*/
+h3 {            
+font-family: 'Roboto', sans-serif;
+text-align: center;
+}
+/*informacion*/
+p{          
+font-family: 'Roboto', sans-serif;
+text-align: center;}
+article { width: 50%;
+    height: 50%;
+    padding: 30px;
+margin: auto;
+margin-bottom: 10%;
+margin-top: 0%;
+overflow: hidden;
+}
+/*linea que separa*/
+hr {        
+background-color:rgb(12, 0, 53) ;
+margin-left: 40%;
+margin-right:40%;
+width: 20%;
+height: 2px;
+text-align: center;}
+ /*Menu*/
+ul {       
+list-style-type:none;
+text-align:center;}
+.Menu > li {
+float:none;
+justify-content: center;}
+li{
+display: inline-block;
+}
+.Menu li a {
+background-color:rgb(17, 1, 96);
+color:#fff;
+text-decoration: none;
+padding: 12px;
+font-family: 'Roboto', sans-serif;
+border-radius: 50px;
+transition: all 500ms ease;
+text-align: center;
+margin-bottom: 1%;
+align-content: center;
+}
+.Menu li a:hover {
+background-color:#6352ff;
+transform: scale(1.15);
+}
+#menumovil{
+display: none;
+}
+/*descargar cv*/
+.descargarCV{
+width: 100%;
+max-width: 300px;
+margin-left: 25%;
+padding: 5px;
+text-align: center;
+}
+.descarga-ahora {
+display: inline-block;
+text-decoration: none;
+padding: 1px 1px;
+background: #7da0fb;
+color: #fff;
+border-radius: 5px;
+}
+.descarga-ahora:hover{
+    opacity: 0.8;
+}
+.btn-descarga{
+display: inline-block;
+padding: 1px 1px;
+background: #7fa7f0;
+color: #fff;
+border: none;
+font-size: 16px;
+margin-top: 5px;
+border-radius: 5px;
+outline: 0px;
+cursor: pointer;
+}
+.btn-descarga:hover{
+    opacity: 0.8;
+}
+/*boton de ir al inicio*/
+#boton {text-align: center;}    
+#inicio { text-decoration: none;
+color: rgb(12, 0, 53);
+border: 1px solid  rgb(12, 0, 53);
+border-radius: 10%;}
+i{
+padding: 5px;
+}
+/*Ocultar texto*/
+#textos {
+display: none;
+}
+#texto {
+display: none;
+}
+button {
+border: none;
+background: none;
+margin-left: 46%;
+}
+/*Scroll to top*/
+.go-top-conteiner {
+position: fixed;
+bottom: 4rem;
+right: 4rem;
+width: 6.6rem;
+height: 6.6;
+z-index: -1;
+}
+.go-top-button{
+width: 0rem;
+height: 0rem;
+background: #2071b2;
+border-radius: 50%;
+cursor: pointer;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: -1;
+margin: 0 auto;
+}
+.go-top-button.i{
+position: absolute;
+font-size: 1.7rem;
+top: 48%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+@keyframes popup {
+0%{
+width: 0rem;
+height: 0rem;
+}
+50%{
+width: 8rem;
+height: 8rem;
+}
+100%{
+width: 6.6rem;
+height: 6.6rem;
+}
+}
+@media screen and (max-width:720px){
+ #nav{
+position: fixed;
+top: 0;
+right: -300px;
+padding: 40px ;
+background: #fff;
+width: 30%;
+height: 100vh;
+z-index: 1;
+transition: all 300ms;
+}
+.Menu{
+flex-direction: column;
+}
+.Menu li{
+margin-top: 30px;
+}
+.Menu li a {
+background: none;
+color: rgb(12, 0, 53);
+}
+.Menu li a:hover{
+background: none;
+transition: none;
+}
+#fondonegro{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+background: rgba(0,0,0,0.5);
+display: none;;}
+#menumovil{
+height: 30px;
+width: 30px;
+display:flex;
+background-position: center center;
+cursor: pointer;
+margin: auto;
+margin-top: 10px;
+background: rgb(255, 255, 255, 0.2);
+border: 5px solid rgba(255, 255, 255, 0.2);
+border-radius: 30%;
+}
+#menumovil:hover{
+background: rgb(255, 255, 255, 0.5);
+border: 5px solid rgba(255, 255, 255, 0.5);
+border-radius: 30%;
+}
+}
